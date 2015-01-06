@@ -66,32 +66,15 @@ module.exports = {
       'vendor/angular-animate/angular-animate.js',
       'vendor/lodash/dist/lodash.min.js',
       'vendor/angular-resource/angular-resource.js',
-      'vendor/placeholders/angular-placeholders-0.0.1-SNAPSHOT.min.js',
       'vendor/angular-ui-router/release/angular-ui-router.js',
       'vendor/angular-ui-utils/modules/route/route.js',
       'vendor/jquery/jquery.js',
-      'vendor/jquery/jquery-ui.min.js',
-      'vendor/bootstrap-floating-labels/floating-labels.js',
-      'vendor/bootstrap/dist/js/bootstrap.min.js',
-      'vendor/angular-bootstrap-multiselect/angular-bootstrap-multiselect.js',
-      'vendor/Chart.js/Chart.min.js',
-      'vendor/angular-chart.js/angular-chart.js',
-      'vendor/fusioncharts-suite-xt/js/fusioncharts.js',
-      'vendor/fusioncharts-suite-xt/js/fusioncharts.charts.js',
-      'vendor/fusioncharts-suite-xt/js/fusioncharts.widgets.js',
-      'vendor/fusioncharts-suite-xt/js/fusioncharts.powercharts.js',
-      'vendor/fusioncharts-suite-xt/js/fusioncharts.gantt.js',
-      'vendor/fusioncharts-suite-xt/js/themes/fusioncharts.theme.fint.js',
-      'vendor/bootstrap-treeview/dist/bootstrap-treeview.min.js'
+      'vendor/jquery/jquery-ui.min.js'
     ],
     css: [
-      'vendor/animate.css/animate.min.css',
-      'vendor/angular-chart.js/angular-chart.less',
-      'vendor/glyphicons-large/css/bootstrap.icon-large.min.css',
-      'vendor/bootstrap-treeview/dist/bootstrap-treeview.min.css'
+      'vendor/animate.css/animate.min.css'
     ],
     assets: [
-      'vendor/glyphicons-large/img/glyphicons.png'
     ]
   }
 };
