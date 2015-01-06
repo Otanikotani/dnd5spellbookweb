@@ -1,6 +1,7 @@
 angular
 .module('spells', [
-    'ui.router'
+    'ui.router',
+    'spells.domain'
   ])
 
 .config(
@@ -14,7 +15,7 @@ angular
       data:
         pageTitle: 'Spells')
 
-.controller('SpellsController', ['$scope',
-    ($scope) ->
-      $scope.spells = []
+.controller('SpellsController', ['$scope', 'SpellsApi'
+    ($scope, SpellsApi) ->
+      $scope.spells = SpellsApi.Spells.query()
   ])

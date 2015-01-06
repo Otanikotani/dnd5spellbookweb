@@ -2,8 +2,10 @@
   "name": "ng-boilerplate",
   "version": "0.3.2",
   "devDependencies": {
-    "angular": "~1.2",
-    "angular-mocks": "~1.2",
+    "angular": "~1.2.28",
+    "angular-resource": "~1.2.28",
+    "angular-mocks": "~1.2.28",
+    "angular-animate": "~1.2.28",
     "angular-ui-router": "~0.2"
   },
   "dependencies": {}

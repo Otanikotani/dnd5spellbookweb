@@ -1,7 +1,8 @@
 angular.module('ngBoilerplate', [
     'templates-app',
     'templates-common',
-    'spells'
+    'spells',
+    'spells.domain'
 ])
 
     .config(function myAppConfig($stateProvider, $urlRouterProvider) {
