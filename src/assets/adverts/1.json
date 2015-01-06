@@ -1,0 +1,98 @@
+{
+  "id": 1,
+  "showBorder": 0,
+  "dealerName": "Vertu Honda Boston",
+  "registrationNumber": "NG14UZC",
+  "registrationDate": "23/07/2014",
+  "mmtMakeDescription": "Honda CR-V 2.2 i-DTEC",
+  "mmtTypeDescription": "( 150ps ) 4X4 2014MY EX",
+  "mileage": 6250,
+  "mmtType": {
+    "mmtGearbox": {
+      "groupMessageKey": "Manual"
+    },
+    "mmtFuel": {
+      "groupMessageKey": "Diesel"
+    },
+    "mmtDrive": {
+      "groupMessageKey": "Four wheel drive"
+    },
+    "cylVolumeCcm": "2199ccm"
+  },
+  "bodyGroupMessageKey": "4x4 / SUV",
+  "appliedRule": {
+    "lowPriceSpot": 25793,
+    "highPriceSpot": 27440,
+    "lowTargetPriceArea": 94,
+    "highTargetPriceArea": 100,
+    "typeDescription": "Group - General",
+    "lowDaysAdvertised": 61,
+    "highDaysAdvertised": 90
+  },
+  "daysAdvertised": 62,
+  "daysAtCurrentPrice": 15,
+  "advertSpotPrice": {
+    "averageSellingDays": 44
+  },
+  "advertPriceHistories": [
+    {
+      "changed": "23/07/2014",
+      "newPrice": 3001,
+      "oldPrice": 1500,
+      "priceHistoryType": {
+        "messageKey": "Original advert"
+      }
+    },
+    {
+      "changed": "14/07/2014",
+      "newPrice": 1500,
+      "oldPrice": 1222,
+      "priceHistoryType": {
+        "messageKey": "Price changed"
+      }
+    },
+    {
+      "changed": "08/03/2014",
+      "newPrice": 1222,
+      "oldPrice": 888,
+      "priceHistoryType": {
+        "messageKey": "Price changed"
+      }
+    }
+  ],
+  "askingPrice": 2222,
+  "portalImages": [
+    {
+      "url": "http://420placehold.it/tech/80-40",
+      "count": 14
+    },
+    {
+      "url": "http://420placehold.it/tech/80-40",
+      "count": 5
+    }
+  ],
+  "similarities": {
+    "similar": 15,
+    "prettySimilar": 8,
+    "otherwise": 35
+  },
+  "radius": 50,
+  "postCode": "DH3",
+  "radarLink": "http://radaruk.autovista.eu/RadarV2/reports?isoLanguage=-uw=&amp;isoCountry=2IE=&amp;mode=-z70vJaX&amp;theme=-z7zXWsiOw==&amp;typeCode=rk2GQzTWt53I&amp;regDate=rkHW7vLL-lxSRK4UTQ==&amp;odometer=qfekxg==&amp;regionCode=&amp;askingPrice=retjVi8=&amp;regNo=0YrYmt8Cqg==&amp;zipcode=29Fp&amp;partnerID=10&amp;companyCode=3nupFj9idfQWFJo=",
+  "askingPrice": -2000,
+  "spotPrice": {
+    "value": 15000,
+    "details": [
+      {
+        "name": "Equipment",
+        "value": 3000
+      },
+      {
+        "name": "Vehicle",
+        "value": 12000
+      }
+    ]
+  },
+  "policyPrice": 3334
+
+}

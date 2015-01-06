@@ -1,0 +1,66 @@
+/**
+ * This is the main application stylesheet. It should include or import all
+ * stylesheets used throughout the application as this is the only stylesheet in
+ * the Grunt configuration that is automatically processed.
+ */
+
+
+/**
+ * First, we include the Twitter Bootstrap LESS files. Only the ones used in the
+ * project should be imported as the rest are just wasting space.
+ */
+
+@import '../../vendor/bootstrap/less/bootstrap.less';
+@import 'bootswatch/variables.less';
+@import 'bootswatch/bootswatch.less';
+@import 'custom-bootstrap.less';
+@import 'animations.less';
+@import 'slider.less';
+
+/**
+ * This is our main variables file. We must include it last so we can overwrite any variable
+ * definitions in our imported stylesheets.
+ */
+
+@import 'variables.less';
+@import '../app/home/home.less';
+
+/* Mobile hiding/showing */
+.hide-m {
+  display: none;
+}
+
+.show-m {
+  display: block;
+}
+
+/* Laptop hiding/showing */
+@media screen and (min-width: 768px) {
+  .hide-l {
+    display: none;
+  }
+
+  .show-l {
+    display: block;
+  }
+
+}
+
+/* Desktop hiding/showing */
+@media screen and (min-width: 992px) {
+  .hide-d {
+    display: none;
+  }
+
+  .show-d {
+    display: block;
+  }
+
+}
+
+.icon-radar {
+  background: url('/assets/images/icon-radar.png') 0 0 no-repeat;
+  width: 45px;
+  height: 45px;
+  display: inline-block;
+}

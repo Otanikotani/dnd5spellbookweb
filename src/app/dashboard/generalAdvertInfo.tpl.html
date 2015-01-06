@@ -1,0 +1,36 @@
+<div class="panel panel-default">
+    <div class="panel-heading" id="headingGeneralInfo">
+        <div class="row">
+            <div class="col-xs-12 col-md-6 col-sm-12">
+                <canvas id="doughnut" class="chart chart-doughnut" data="data"
+                        labels="labels"
+                        colours="colours"></canvas>
+            </div>
+            <div class="col-xs-12 col-md-6 col-sm-12 text-right">
+                <h1>
+                    <strong>345</strong>
+                </h1>
+
+                <h3>Vehicles accessed by Analyser</h3>
+            </div>
+        </div>
+    </div>
+    <div class="panel-body">
+        <div class="btn-group btn-group-justified" role="group" aria-label="dealershipButtonGroup">
+            <div multiselect class="btn-group" style="width:75%"
+                ng-model="selectedDealerships"
+                ms-header="Select Dealerships"
+                options="item as item.name for item in dealerships"
+                data-multiple="true"
+                data-compare-by="id"
+                scroll-after-rows="5">
+            </div>
+            <div class="btn-group" role="group" style="width:25%">
+                <responsive-button title="Search" icon="glyphicon-search" btn-class="btn-primary"></responsive-button>
+             </div>
+        </div>
+    </div>
+
+</div>
+
+

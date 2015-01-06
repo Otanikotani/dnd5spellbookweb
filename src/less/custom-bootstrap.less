@@ -1,0 +1,122 @@
+.carousel-control {
+  font-size: 20px;
+  width: 2%
+}
+
+.carousel .carousel-indicators {
+  display: none;
+}
+
+.nopadding {
+  padding: 0 !important;
+}
+
+.no-horizontal-padding {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.no-vertical-padding {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.only-top-padding {
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+}
+
+.panel-collapse > table {
+  margin-bottom: 0;
+}
+
+.inherit-width {
+  width: inherit;
+}
+
+.btn-group-justified > multiselect {
+  > .btn-group {
+    float: none;
+    display: table-cell;
+    width: 1%;
+  }
+  > .btn-group .btn {
+    width: 100%;
+  }
+}
+
+div[multiselect] ul {
+  width: 100%;
+}
+
+.filters-container {
+  margin-bottom: 25px;
+  padding: 10px 25px;
+}
+
+.panel-group .panel {
+  overflow:visible;
+}
+
+.tag {
+  padding: .3em .4em .4em;
+  margin: 0 .1em;
+}
+
+.tag a {
+  background: transparent;
+  color: inherit;
+}
+
+.tag a:hover {
+  cursor: pointer;
+}
+
+.nav-tabs > li > a {
+  color: inherit;
+  background: transparent;
+}
+
+a.thumbnail {
+  padding: 0;
+  text-decoration: none;
+}
+
+.thumbnail-body {
+  display: block;
+  line-height: @line-height-base;
+  background-color: @thumbnail-bg;
+  .transition(all .2s ease-in-out);
+
+  > img,
+  a > img {
+    &:extend(.img-responsive);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  // Add a hover state for linked versions only
+  a&:hover,
+  a&:focus,
+  a&.active {
+    border-color: @link-color;
+    text-decoration: none;
+  }
+
+  // Image captions
+  .caption {
+    padding: @thumbnail-caption-padding;
+    color: @thumbnail-caption-color;
+  }
+}
+
+.thumbnail-footer {
+  padding: 10px 10px;
+  background-color: #f5f5f5;
+  border-top: 1px solid #dddddd;
+}
+
+@media (min-width: 768px) {
+  .dl-horizontal dt { text-align: left; }
+}

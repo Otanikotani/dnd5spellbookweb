@@ -1,0 +1,23 @@
+[
+  {
+    "name": "First policy",
+    "type": "group",
+    "make": {
+      "name": "Vertu honda boston"
+    }
+  },
+  {
+    "name": "Second group policy",
+    "type": "group",
+    "make": {
+      "name": "Vertu honda Lincoln"
+    }
+  },
+  {
+    "name": "Dealer policy",
+    "type": "dealer",
+    "make": {
+      "name": "Vertu honda durham"
+    }
+  }
+]

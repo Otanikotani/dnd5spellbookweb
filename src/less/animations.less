@@ -1,0 +1,15 @@
+@item-fade-time: 0.3s;
+
+.hideable-item.ng-enter {
+  -webkit-animation: fadeIn @item-fade-time;
+  -moz-animation: fadeIn @item-fade-time;
+  -ms-animation: fadeIn @item-fade-time;
+  animation: fadeIn @item-fade-time;
+}
+
+.hideable-item.ng-leave {
+  -webkit-animation: fadeOut @item-fade-time;
+  -moz-animation: fadeOut @item-fade-time;
+  -ms-animation: fadeOut @item-fade-time;
+  animation: fadeOut @item-fade-time;
+}

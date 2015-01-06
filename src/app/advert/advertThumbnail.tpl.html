@@ -1,0 +1,23 @@
+<a href="#/adverts/1" class="thumbnail" ng-click="open(advert)">
+    <div class="thumbnail-body">
+        <img src="http://420placehold.it/cars/400-150" alt="" class="img-responsive">
+
+        <div class="col-xs-18 col-sm-12 col-md-6 alert-danger nopadding" style="font-size: 80%">
+            Asking price +12,000$
+        </div>
+        <div class="col-xs-18 col-sm-12 col-md-6 alert-success nopadding" style="font-size: 80%">
+            Asking price +12,000$
+        </div>
+        <div class="caption">
+            <h4>Thumbnail label: {{advert.name}}</h4>
+            <h4>Visibility: {{advert.visibility}}</h4>
+
+            <p>Consectetur, culpa itaque odio similique suscipit</p>
+        </div>
+    </div>
+    <div class="thumbnail-footer">
+        <button class="btn btn-default btn-sm" ng-click="toggle(advert)">{{advert.visibility ? 'Hide' : 'Show'}}
+        </button>
+    </div>
+</a>
+
