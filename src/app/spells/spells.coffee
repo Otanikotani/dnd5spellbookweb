@@ -1,7 +1,6 @@
 angular
 .module('spells', [
-    'ui.router',
-    'ngAnimate'
+    'ui.router'
   ])
 
 .config(

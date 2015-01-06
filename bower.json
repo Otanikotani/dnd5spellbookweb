@@ -1,15 +1,10 @@
 {
-  "name": "dnd-5-spellbook-web",
+  "name": "ng-boilerplate",
   "version": "0.3.2",
   "devDependencies": {
-    "angular": "~1.2.28",
-    "angular-resource": "~1.2.28",
-    "angular-mocks": "~1.2.28",
-    "angular-animate": "~1.2.28",
-    "lodash": "~2.4.1",
-    "angular-ui-router": "~0.2",
-    "animate.css": "~3.2.0"
+    "angular": "~1.2",
+    "angular-mocks": "~1.2",
+    "angular-ui-router": "~0.2"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }

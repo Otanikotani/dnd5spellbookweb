@@ -7,8 +7,8 @@ module.exports = {
    * development and the `compile_dir` folder is where our app resides once it's
    * completely built.
    */
-  build_dir: 'bin',
-  compile_dir: '../webapp/static',
+  build_dir: 'build',
+  compile_dir: 'bin',
 
   /**
    * This is a collection of file patterns that refer to our app code (the
@@ -63,18 +63,12 @@ module.exports = {
   vendor_files: {
     js: [
       'vendor/angular/angular.js',
-      'vendor/angular-animate/angular-animate.js',
-      'vendor/lodash/dist/lodash.min.js',
-      'vendor/angular-resource/angular-resource.js',
       'vendor/angular-ui-router/release/angular-ui-router.js',
-      'vendor/angular-ui-utils/modules/route/route.js',
-      'vendor/jquery/jquery.js',
-      'vendor/jquery/jquery-ui.min.js'
+      'vendor/angular-ui-utils/modules/route/route.js'
     ],
     css: [
-      'vendor/animate.css/animate.min.css'
     ],
     assets: [
     ]
-  }
+  },
 };
