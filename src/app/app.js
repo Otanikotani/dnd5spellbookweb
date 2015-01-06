@@ -2,6 +2,7 @@ angular.module('ngBoilerplate', [
     'templates-app',
     'templates-common',
     'spells',
+    'spellFilter',
     'spells.domain'
 ])
 

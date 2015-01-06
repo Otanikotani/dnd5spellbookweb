@@ -63,15 +63,18 @@ module.exports = {
   vendor_files: {
     js: [
       'vendor/angular/angular.js',
+      'vendor/lodash/dist/lodash.min.js',
       'vendor/angular-ui-router/release/angular-ui-router.js',
       'vendor/angular-resource/angular-resource.js',
       'vendor/angular-ui-utils/modules/route/route.js',
       'vendor/angular-animate/angular-animate.js',
       'vendor/jquery/dist/jquery.min.js',
       'vendor/jquery/dist/jquery.min.map',
+      'vendor/ngInfiniteScroll/build/ng-infinite-scroll.min.js',
       'vendor/materialize/dist/**'
     ],
     css: [
+      'vendor/animate.css/animate.min.css',
     ],
     assets: [
     ]

@@ -1,5 +1,152 @@
 [
   {
-    "name": "My spell"
+    "name": "spell 1"
+  },
+  {
+    "name": "Spell 2"
+  },
+  {
+    "name": "My spell 3"
+  },
+  {
+    "name": "My spell 4"
+  },
+  {
+    "name": "My spell 5"
+  },
+  {
+    "name": "My spell 6"
+  },
+  {
+    "name": "My spell 7"
+  },
+  {
+    "name": "My spell 8",
+    "fav": true
+  },
+  {
+    "name": "spell 9"
+  },
+  {
+    "name": "Spell 10"
+  },
+  {
+    "name": "My spell 11"
+  },
+  {
+    "name": "My spell 12"
+  },
+  {
+    "name": "My spell 13"
+  },
+  {
+    "name": "My spell 14"
+  },
+  {
+    "name": "My spell 15"
+  },
+  {
+    "name": "My spell 16",
+    "fav": true
+  },
+  {
+    "name": "spell 17"
+  },
+  {
+    "name": "Spell 18"
+  },
+  {
+    "name": "My spell 19"
+  },
+  {
+    "name": "My spell 20"
+  },
+  {
+    "name": "My spell 21"
+  },
+  {
+    "name": "My spell 22"
+  },
+  {
+    "name": "My spell 23"
+  },
+  {
+    "name": "My spell 24",
+    "fav": true
+  },
+  {
+    "name": "spell 25"
+  },
+  {
+    "name": "Spell 26"
+  },
+  {
+    "name": "My spell 27"
+  },
+  {
+    "name": "My spell 28"
+  },
+  {
+    "name": "My spell 29"
+  },
+  {
+    "name": "My spell 30"
+  },
+  {
+    "name": "My spell 31"
+  },
+  {
+    "name": "My spell 32",
+    "fav": true
+  },
+  {
+    "name": "spell 33"
+  },
+  {
+    "name": "Spell 34"
+  },
+  {
+    "name": "My spell 35"
+  },
+  {
+    "name": "My spell 36"
+  },
+  {
+    "name": "My spell 37"
+  },
+  {
+    "name": "My spell 38"
+  },
+  {
+    "name": "My spell 39"
+  },
+  {
+    "name": "My spell 40",
+    "fav": true
+  },
+  {
+    "name": "spell 41"
+  },
+  {
+    "name": "Spell 42"
+  },
+  {
+    "name": "My spell 43"
+  },
+  {
+    "name": "My spell 44"
+  },
+  {
+    "name": "My spell 45"
+  },
+  {
+    "name": "My spell 46"
+  },
+  {
+    "name": "My spell 47"
+  },
+  {
+    "name": "My spell 48",
+    "fav": true
   }
 ]
