@@ -2,8 +2,10 @@ angular.module('ngBoilerplate', [
     'templates-app',
     'templates-common',
     'spells',
+    'classes',
     'spellFilter',
-    'spells.domain'
+    'spells.domain',
+    'classes.domain'
 ])
 
     .config(function myAppConfig($stateProvider, $urlRouterProvider) {

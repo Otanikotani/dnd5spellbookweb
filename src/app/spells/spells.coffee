@@ -2,6 +2,7 @@ angular
 .module('spells', [
     'ui.router',
     'spells.domain',
+    'classes.domain',
     'infinite-scroll',
     'spellFilter',
     'ngAnimate'
@@ -18,21 +19,13 @@ angular
       data:
         pageTitle: 'Spells')
 
-.controller('SpellsController', ['$scope', 'SpellsApi'
-    ($scope, SpellsApi) ->
-      LOAD_BY = 8
-      loaded = LOAD_BY * 2
-      overall = 0
-      loadedSpells = []
-
+.controller('SpellsController', ['$scope', 'SpellsApi', 'ClassesApi',
+    ($scope, SpellsApi, ClassesApi) ->
       unfav = (spell) ->
         spell.fav = false
 
-      allSpells = SpellsApi.Spells.query( () ->
-        unfav spell  for spell in allSpells when !spell.fav?
-        $scope.spells = allSpells.slice(0, loaded)
-        loadedSpells = $scope.spells
-        overall = allSpells.length
+      $scope.spells = SpellsApi.Spells.query( () ->
+        unfav spell  for spell in $scope.spells when !spell.fav?
       )
 
       $scope.favs = false
@@ -40,13 +33,6 @@ angular
 
       $scope.toggleActive = (spell) ->
         spell.fav = !spell.fav
-
-      $scope.addSpells = () ->
-        console.log 'Adding more spells'
-        if loaded < overall
-          nextLimit =  if loaded + LOAD_BY > overall then overall else loaded + LOAD_BY
-          $scope.spells = $scope.spells.concat allSpells.slice(loaded, nextLimit)
-          loaded = nextLimit
   ])
 .directive('preventRedirect', () ->
   restrict: 'A'
