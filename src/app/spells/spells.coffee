@@ -54,3 +54,4 @@ angular
     jQuery(element).on 'click', (event) ->
       event.preventDefault()
 )
+

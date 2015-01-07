@@ -5,3 +5,7 @@ angular.module('spellFilter', []).filter('favourites', () ->
     else
       return input
 )
+.filter("sanitize", ['$sce', ($sce) ->
+  (htmlCode) ->
+    $sce.trustAsHtml htmlCode
+])
