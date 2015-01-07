@@ -1,9 +1,9 @@
 <ul id="nav-mobile" class="side-nav fixed">
     <a href="#" class="brand-logo"><h4 class="header">Spellbook</h4></a>
-    <li class="bold" ng-class="{'active': currentClassName == ''}">
-        <a ng-click="setCurrentClass('')">All classes</a>
+    <li class="bold" ng-class="{'active': currentClassName == 'all'}" style="cursor:pointer">
+        <a ng-click="setCurrentClass('all')">All classes</a>
     </li>
-    <li class="bold" ng-repeat="class in classes" ng-class="{'active': currentClassName == class.name}">
+    <li class="bold" ng-repeat="class in classes" ng-class="{'active': currentClassName == class.name}" style="cursor:pointer">
         <a ng-click="setCurrentClass(class.name)">{{class.name}}</a>
     </li>
 
@@ -27,9 +27,9 @@
     <div class="row">
         <div class="col s12 m6 l4 hideable-item"
              ng-repeat="spell in spells | filter: { name: spellName } | favourites: favs | hasClass: currentClassName">
-            <div class="card blue-grey darken-1 ">
-                <div class="card-content white-text">
-                    <span class="card-title">
+            <div class="card " ng-class="classesColors[currentClassName]">
+                <div class="card-content">
+                    <span class="">
                         <h4>
                             {{spell.name}}
                             <a ng-click="toggleActive(spell)" ng-class="{'favourite-icon-active': spell.fav == true}"

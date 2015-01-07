@@ -11,7 +11,7 @@ angular.module('spellFilter', []).filter('favourites', () ->
 ])
 .filter("hasClass", [() ->
   (input, className) ->
-    if className and className != ''
+    if className and className != 'all'
       _.filter input, (spell) ->
         className in spell.classes
     else

@@ -22,17 +22,23 @@ angular
 .controller('SpellsController', ['$scope', 'SpellsApi', 'ClassesApi',
     ($scope, SpellsApi, ClassesApi) ->
       $scope.favs = false
+      $scope.classesColors = {}
+      $scope.classesColors['all'] = 'blue-grey lighten-2'
       $scope.toggleActive = (spell) ->
         spell.fav = !spell.fav
       unfav = (spell) ->
         spell.fav = false
+      addColor = (dndclass) ->
+        $scope.classesColors[dndclass.name] = dndclass.color
 
-      $scope.currentClassName = ''
+      $scope.currentClassName = 'all'
 
       $scope.setCurrentClass = (className) ->
         $scope.currentClassName = className
 
-      $scope.classes = ClassesApi.Classes.query()
+
+      $scope.classes = ClassesApi.Classes.query () ->
+        addColor dndclass for dndclass in $scope.classes
 
       $scope.spells = SpellsApi.Spells.query( () ->
         unfav spell  for spell in $scope.spells when !spell.fav?

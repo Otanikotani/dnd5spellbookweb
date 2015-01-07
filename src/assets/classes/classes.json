@@ -1,6 +1,7 @@
 [
   {
     "name": "Bard",
+    "color": "deep-purple lighten-2",
     "spells": [
       "Blade Ward",
       "Dancing Lights",
@@ -121,6 +122,7 @@
   },
   {
     "name": "Cleric",
+    "color": "grey lighten-2",
     "spells": [
       "Guidance",
       "Light",
@@ -232,6 +234,7 @@
   },
   {
     "name": "Druid",
+    "color": "green darken-2",
     "spells": [
       "Druidcraft",
       "Guidance",
@@ -347,6 +350,7 @@
   },
   {
     "name": "Paladin",
+    "color": "yellow lighten-2",
     "spells": [
       "Bless",
       "Command",
@@ -397,6 +401,7 @@
   },
   {
     "name": "Ranger",
+    "color": "light-green accent-2",
     "spells": [
       "Alarm",
       "Animal Friendship",
@@ -448,6 +453,7 @@
   },
   {
     "name": "Sorcerer",
+    "color": " red lighten-2",
     "spells": [
       "Acid Splash",
       "Blade Ward",
@@ -582,6 +588,7 @@
   },
   {
     "name": "Warlock",
+    "color": "purple lighten-2",
     "spells": [
       "Blade Ward",
       "Chill Touch",
@@ -661,6 +668,7 @@
   },
   {
     "name": "Wizard",
+    "color": "blue lighten-2",
     "spells": [
       "Acid Splash",
       "Blade Ward",
