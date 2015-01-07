@@ -21,18 +21,29 @@ angular
 
 .controller('SpellsController', ['$scope', 'SpellsApi', 'ClassesApi',
     ($scope, SpellsApi, ClassesApi) ->
+      $scope.favs = false
+      $scope.toggleActive = (spell) ->
+        spell.fav = !spell.fav
       unfav = (spell) ->
         spell.fav = false
 
+      $scope.currentClassName = ''
+
+      $scope.setCurrentClass = (className) ->
+        $scope.currentClassName = className
+
+      $scope.classes = ClassesApi.Classes.query()
+
       $scope.spells = SpellsApi.Spells.query( () ->
         unfav spell  for spell in $scope.spells when !spell.fav?
+        $scope.classes.$promise.then () ->
+          for spell in $scope.spells
+            spell.classes = []
+            for dndclass in $scope.classes
+              if spell.name in dndclass.spells
+                spell.classes.push dndclass.name
       )
 
-      $scope.favs = false
-
-
-      $scope.toggleActive = (spell) ->
-        spell.fav = !spell.fav
   ])
 .directive('preventRedirect', () ->
   restrict: 'A'
@@ -40,4 +51,10 @@ angular
     jQuery(element).on 'click', (event) ->
       event.preventDefault()
 )
+.directive('sideNav', () ->
+  restrict: 'A'
+  link: (scope, element, attrs) ->
+    jQuery(element).sideNav()
+)
+
 
