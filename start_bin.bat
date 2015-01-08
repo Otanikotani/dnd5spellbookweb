@@ -1,0 +1,1 @@
+http-server ./bin -o -a127.0.0.2 -p8888
