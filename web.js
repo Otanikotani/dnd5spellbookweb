@@ -1,9 +1,8 @@
-sdfgjhfdslhkgjds
+//var gzippo = require('gzippo');
+var express = require('express');
+//var morgan = require('morgan');
+var app = express();
 
-
-var gzippsdfdsfo =sdfrequdfsaire('gzippo');
-var express = require('exprdfn');
-var app ads
-app.use(morgan('dev'));
-app.use(expresasdfs.static('./bin'));
-app.lisfadsften(process.env.PORT || 5000);
+//app.use(morgan('dev'));
+app.use(express.static('./bin'));
+app.listen(process.env.PORT || 5000);
