@@ -69,14 +69,23 @@ module.exports = {
       'vendor/angular-ui-utils/modules/route/route.js',
       'vendor/angular-animate/angular-animate.js',
       'vendor/jquery/dist/jquery.min.js',
-      'vendor/jquery/dist/jquery.min.map',
       'vendor/ngInfiniteScroll/build/ng-infinite-scroll.min.js',
-      'vendor/materialize/dist/**'
+      'vendor/materialize/dist/js/materialize.min.js'
     ],
     css: [
       'vendor/animate.css/animate.min.css',
+      'vendor/materialize/dist/css/materialize.min.css'
     ],
     assets: [
+      'vendor/jquery/dist/jquery.min.map',
+      'vendor/materialize/dist/font/material-design-icons/Material-Design-Icons.eot',
+      'vendor/materialize/dist/font/material-design-icons/Material-Design-Icons.svg',
+      'vendor/materialize/dist/font/material-design-icons/Material-Design-Icons.ttf',
+      'vendor/materialize/dist/font/material-design-icons/Material-Design-Icons.woff',
+      'vendor/materialize/dist/font/roboto/Roboto-Bold.ttf',
+      'vendor/materialize/dist/font/roboto/Roboto-Light.ttf.ttf',
+      'vendor/materialize/dist/font/roboto/Roboto-Medium.ttf.ttf',
+      'vendor/materialize/dist/font/roboto/Roboto-Regular.ttf.ttf'
     ]
   },
 };
