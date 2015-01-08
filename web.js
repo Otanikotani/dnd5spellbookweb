@@ -4,6 +4,5 @@ var morgan = require('morgan');
 var app = express();
 
 app.use(morgan('dev'));
-app.use(gzippo.staticGzip("" + __dirname + "/bin"));
 app.use(express.static(__dirname + '/bin'))
 app.listen(process.env.PORT || 5000);
