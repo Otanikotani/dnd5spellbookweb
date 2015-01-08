@@ -74,18 +74,17 @@ module.exports = {
     ],
     css: [
       'vendor/animate.css/animate.min.css',
-      'vendor/materialize/dist/css/materialize.min.css'
-    ],
-    assets: [
-      'vendor/jquery/dist/jquery.min.map',
+      'vendor/materialize/dist/css/materialize.min.css',
       'vendor/materialize/dist/font/material-design-icons/Material-Design-Icons.eot',
       'vendor/materialize/dist/font/material-design-icons/Material-Design-Icons.svg',
       'vendor/materialize/dist/font/material-design-icons/Material-Design-Icons.ttf',
       'vendor/materialize/dist/font/material-design-icons/Material-Design-Icons.woff',
       'vendor/materialize/dist/font/roboto/Roboto-Bold.ttf',
-      'vendor/materialize/dist/font/roboto/Roboto-Light.ttf.ttf',
-      'vendor/materialize/dist/font/roboto/Roboto-Medium.ttf.ttf',
-      'vendor/materialize/dist/font/roboto/Roboto-Regular.ttf.ttf'
+      'vendor/materialize/dist/font/roboto/Roboto-Light.ttf',
+      'vendor/materialize/dist/font/roboto/Roboto-Medium.ttf',
+      'vendor/materialize/dist/font/roboto/Roboto-Regular.ttf'
+    ],
+    assets: [
     ]
   },
 };
