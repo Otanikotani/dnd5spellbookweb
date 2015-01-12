@@ -23,7 +23,7 @@ angular
     ($scope, SpellsApi, ClassesApi) ->
       $scope.favs = false
       $scope.classesColors = {}
-      $scope.classesColors['all'] = 'blue-grey lighten-2'
+      $scope.classesColors['all'] = '#a1887f'
       $scope.spellName = ''
       $scope.toggleActive = (spell) ->
         spell.fav = !spell.fav
@@ -55,6 +55,12 @@ angular
         $scope.$apply () ->
           $scope.filterQuery = $scope.spellName
       , 350)
+
+      $scope.getLiClass = (dndclass) ->
+        if $scope.currentClassName == dndclass.name
+          dndclass.name + ' active';
+        else
+          dndclass.name
       return
 ])
 .directive('preventRedirect', () ->

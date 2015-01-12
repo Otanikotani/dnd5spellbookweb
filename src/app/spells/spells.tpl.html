@@ -1,9 +1,9 @@
 <ul id="nav-mobile" class="side-nav fixed">
     <a href="#" class="brand-logo"><h4 class="header">Spellbook</h4></a>
-    <li class="bold" ng-class="{'active': currentClassName == 'all'}" style="cursor:pointer">
+    <li class="bold all" ng-class="{'active': currentClassName == 'all'}" style="cursor:pointer">
         <a ng-click="setCurrentClass('all')">All classes</a>
     </li>
-    <li class="bold" ng-repeat="class in classes" ng-class="{'active': currentClassName == class.name}" style="cursor:pointer">
+    <li class="bold" ng-repeat="class in classes" ng-class="getLiClass(class)" style="cursor:pointer">
         <a ng-click="setCurrentClass(class.name)">{{class.name}}</a>
     </li>
 
@@ -27,7 +27,7 @@
     <div class="row">
         <div class="col s12 m6 l4 hideable-item"
              ng-repeat="spell in spells | filter: {name: filterQuery} | favourites: favs | hasClass: currentClassName">
-            <div class="card " ng-class="classesColors[currentClassName]">
+            <div class="card old-card">
                 <div class="card-content">
                     <span class="">
                         <h4>
@@ -38,6 +38,7 @@
                             </a>
                         </h4>
                     </span>
+                    <hr ng-class="classesColors[currentClassName]" style="height: 2px;border:none"/>
                     <div ng-bind-html="spell.description | sanitize"></div>
                 </div>
             </div>
