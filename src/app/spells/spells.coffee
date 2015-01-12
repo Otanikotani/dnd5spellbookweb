@@ -24,6 +24,7 @@ angular
       $scope.favs = false
       $scope.classesColors = {}
       $scope.classesColors['all'] = 'blue-grey lighten-2'
+      $scope.spellName = ''
       $scope.toggleActive = (spell) ->
         spell.fav = !spell.fav
       unfav = (spell) ->
@@ -50,7 +51,12 @@ angular
                 spell.classes.push dndclass.name
       )
 
-  ])
+      $scope.$watch 'spellName', _.debounce((spellName) ->
+        $scope.$apply () ->
+          $scope.filterQuery = $scope.spellName
+      , 350)
+      return
+])
 .directive('preventRedirect', () ->
   restrict: 'A'
   link: (scope, element, attrs) ->
@@ -61,6 +67,12 @@ angular
   restrict: 'A'
   link: (scope, element, attrs) ->
     jQuery(element).sideNav()
+)
+.directive('autoFocus', ($timeout) ->
+  restrict: 'AC',
+  link: (scope, element) ->
+    $timeout () ->
+      element[0].focus()
 )
 
 
