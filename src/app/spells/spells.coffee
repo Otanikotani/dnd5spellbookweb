@@ -47,8 +47,9 @@ angular
           for spell in $scope.spells
             spell.classes = []
             for dndclass in $scope.classes
-              if spell.name in dndclass.spells
-                spell.classes.push dndclass.name
+              for spellsByLevel in dndclass.spellsByLevels
+                if spell.name in spellsByLevel.spells
+                  spell.classes.push dndclass.name
       )
 
       $scope.$watch 'spellName', _.debounce((spellName) ->
