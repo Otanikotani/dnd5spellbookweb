@@ -41,15 +41,19 @@ angular
       $scope.classes = ClassesApi.Classes.query () ->
         addColor dndclass for dndclass in $scope.classes
 
+      $scope.spellLevels = [0..9]
+
       $scope.spells = SpellsApi.Spells.query( () ->
         unfav spell  for spell in $scope.spells when !spell.fav?
         $scope.classes.$promise.then () ->
           for spell in $scope.spells
             spell.classes = []
+            spell.level = -1
             for dndclass in $scope.classes
               for spellsByLevel in dndclass.spellsByLevels
                 if spell.name in spellsByLevel.spells
                   spell.classes.push dndclass.name
+                  spell.level = spellsByLevel.level
       )
 
       $scope.$watch 'spellName', _.debounce((spellName) ->

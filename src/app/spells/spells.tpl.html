@@ -23,12 +23,15 @@
                 <i class="medium mdi-action-star-rate favourite-icon-active"></i></label>
         </div>
     </div>
-
-    <div class="row">
-        <div class="col s12 m6 l4 hideable-item"
-             ng-repeat="spell in spells | filter: {name: filterQuery} | favourites: favs | hasClass: currentClassName">
-            <div class="card old-card">
-                <div class="card-content">
+    <div ng-repeat="spellLevel in spellLevels">
+    <span>
+        <h4>{{spellLevel > 0 ? "Level " + spellLevel : "Cantrips"}}</h4>
+    </span>
+        <div class="row">
+            <div class="col s12 m6 l4 hideable-item"
+                 ng-repeat="spell in spells | filter: {name: filterQuery} | favourites: favs | hasClass: currentClassName | hasLevel: spellLevel">
+                <div class="card old-card">
+                    <div class="card-content">
                     <span class="">
                         <h4>
                             {{spell.name}}
@@ -38,8 +41,9 @@
                             </a>
                         </h4>
                     </span>
-                    <hr ng-class="classesColors[currentClassName]" style="height: 2px;border:none"/>
-                    <div ng-bind-html="spell.description | sanitize"></div>
+                        <hr ng-class="classesColors[currentClassName]" style="height: 2px;border:none"/>
+                        <div ng-bind-html="spell.description | sanitize"></div>
+                    </div>
                 </div>
             </div>
         </div>
