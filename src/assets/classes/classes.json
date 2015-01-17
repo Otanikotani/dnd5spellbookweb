@@ -508,7 +508,7 @@
     "color": "yellow lighten-2",
     "spellsByLevels": [
       {
-        "level": 0,
+        "level": 1,
         "spells": [
           "Bless",
           "Command",
@@ -528,7 +528,7 @@
         ]
       },
       {
-        "level": 1,
+        "level": 2,
         "spells": [
           "Aid",
           "Branding Smite",
@@ -541,7 +541,7 @@
         ]
       },
       {
-        "level": 2,
+        "level": 3,
         "spells": [
           "Aura of Vitality",
           "Blinding Smite",
@@ -556,7 +556,7 @@
         ]
       },
       {
-        "level": 3,
+        "level": 4,
         "spells": [
           "Aura of Life",
           "Aura of Purity",
@@ -567,7 +567,7 @@
         ]
       },
       {
-        "level": 4,
+        "level": 5,
         "spells": [
           "Banishing Smite",
           "Circle of Power",
@@ -584,7 +584,7 @@
     "color": "light-green accent-2",
     "spellsByLevels": [
       {
-        "level": 0,
+        "level": 1,
         "spells": [
           "Alarm",
           "Animal Friendship",
@@ -602,7 +602,7 @@
         ]
       },
       {
-        "level": 1,
+        "level": 2,
         "spells": [
           "Animal Messenger",
           "Barkskin",
@@ -620,7 +620,7 @@
         ]
       },
       {
-        "level": 2,
+        "level": 3,
         "spells": [
           "Conjure Animals",
           "Conjure Barrage",
@@ -636,7 +636,7 @@
         ]
       },
       {
-        "level": 3,
+        "level": 4,
         "spells": [
           "Conjure Woodland Beings",
           "Freedom of Movement",
@@ -646,7 +646,7 @@
         ]
       },
       {
-        "level": 4,
+        "level": 5,
         "spells": [
           "Commune with Nature",
           "Conjure Volley",

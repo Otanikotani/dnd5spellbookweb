@@ -20,6 +20,5 @@ angular.module('spellFilter', []).filter('favourites', () ->
 .filter("hasLevel", [() ->
   (input, level) ->
     _.filter input, (spell) ->
-      if spell.level == level
-        return input
+      spell.level == level
 ])
